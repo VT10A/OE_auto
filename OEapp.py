@@ -44,7 +44,7 @@ def main():
         st.write(df)
         
         # Perform auto-coding
-        brand_list_path = "Brandlist.csv"  # Local file path
+        brand_list_path = "Brandlist.csv"  
         brand_list = pd.read_csv(brand_list_path)['Brands_list'].str.capitalize().tolist()
         df_auto_coded = auto_code(df, brand_list)
         
@@ -62,7 +62,7 @@ def main():
         st.write("This is where you can view and modify the brand list.")
         
         # Load and display the brand list 
-       brand_list_path = "Brandlist.csv"  # Local file path
+       brand_list_path = "Brandlist.csv"  
         brand_list = pd.read_csv(brand_list_path)
         st.write("Brand List:")
         st.write(brand_list)
