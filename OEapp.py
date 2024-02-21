@@ -44,7 +44,7 @@ def main():
         st.write(df)
         
         # Perform auto-coding
-        brand_list_path = "C:/Users/VivekThaker/MaMs 2023/Brandlist.csv"  # Local file path
+        brand_list_path = "Brandlist.csv"  # Local file path
         brand_list = pd.read_csv(brand_list_path)['Brands_list'].str.capitalize().tolist()
         df_auto_coded = auto_code(df, brand_list)
         
